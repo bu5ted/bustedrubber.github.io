@@ -1563,11 +1563,47 @@ body {
     opacity: 1; /* Fully shown on mouse-over */
 }
 
+.wrapper {
+  text-align: center;
+  margin-left: 30px
+}	
+.tpadr {
+  margin-right: 20px
+}
+.btngroup {
+    opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    display:inline-block;
+}
+
+/* Mouse-over effects */
+.btngroup:hover {
+	display:inline-block;
+    opacity: 1; /* Fully shown on mouse-over */
+}
+.btnleft {
+	margin-right: 50px
+}
+.btnright {
+	margin-left: 50px
+}
+.tagleft {
+	margin-right: 20px
+}
+.tagright {
+	margin-left: 20px
+}
 .box {
     width: 100%;
     overflow: hidden; 
     text-align:center
 }
+
+.box1 {
+    text-align:center
+}
+
 
 .powerSet{
     width: auto;

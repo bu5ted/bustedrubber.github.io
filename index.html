@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
   <meta name="description" content="">
-  <title>RPi3 Tank Control</title>
+  <title>Home</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -18,9 +18,6 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   <script>
-    function clickHandler() {
-      alert("something");
-    }
     
 function lightPower()
 {
@@ -29,6 +26,25 @@ function lightPower()
 	else img.src = "on.gif";
 	return false;
 }
+function light_auto()
+{
+	var imgAuto = document.getElementById("light_auto");
+	var imgMan = document.getElementById("light_manual");
+	if (imgAuto.src.match(/btn_rnd_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
+	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	return false;
+}
+function light_manual()
+{
+	var imgAuto = document.getElementById("light_auto");
+	var imgMan = document.getElementById("light_manual");
+	if (imgMan.src.match(/btn_rnd_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
+	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	return false;
+}
+
 function feederPower()
 {
 	var img = document.getElementById("feedbtn");
@@ -36,14 +52,51 @@ function feederPower()
 	else img.src = "on.gif";
 	return false;
 }
+function feed_auto()
+{
+	var imgAuto = document.getElementById("feed_auto");
+	var imgMan = document.getElementById("feed_manual");
+	if (imgAuto.src.match(/btn_rnd_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
+	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	return false;
+}
+function feed_manual()
+{
+	var imgAuto = document.getElementById("feed_auto");
+	var imgMan = document.getElementById("feed_manual");
+	if (imgMan.src.match(/btn_rnd_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
+	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	return false;
+}
+
 function tempPower()
 {
 	var img = document.getElementById("tempbtn");
 	if(img.src.match(/on/)) img.src = "off.gif";
 	else img.src = "on.gif";
 	return false;
-
 }
+function temp_auto()
+{
+	var imgAuto = document.getElementById("temp_auto");
+	var imgMan = document.getElementById("temp_manual");
+	if (imgAuto.src.match(/btn_rnd_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
+	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	return false;
+}
+function temp_manual()
+{
+	var imgAuto = document.getElementById("temp_auto");
+	var imgMan = document.getElementById("temp_manual");
+	if (imgMan.src.match(/btn_rnd_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
+	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	return false;
+}
+
 function filterPower()
 {
 	var img = document.getElementById("filterbtn");
@@ -51,11 +104,48 @@ function filterPower()
 	else img.src = "on.gif";
 	return false;
 }
+function filter_auto()
+{
+	var imgAuto = document.getElementById("filter_auto");
+	var imgMan = document.getElementById("filter_manual");
+	if (imgAuto.src.match(/btn_rnd_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
+	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	return false;
+}
+function filter_manual()
+{
+	var imgAuto = document.getElementById("filter_auto");
+	var imgMan = document.getElementById("filter_manual");
+	if (imgMan.src.match(/btn_rnd_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
+	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	return false;
+}
+
 function auxPower()
 {
 	var img = document.getElementById("auxbtn");
 	if(img.src.match(/on/)) img.src = "off.gif";
 	else img.src = "on.gif";
+	return false;
+}
+function aux_auto()
+{
+	var imgAuto = document.getElementById("aux_auto");
+	var imgMan = document.getElementById("aux_manual");
+	if (imgAuto.src.match(/btn_rnd_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
+	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	return false;
+}
+function aux_manual()
+{
+	var imgAuto = document.getElementById("aux_auto");
+	var imgMan = document.getElementById("aux_manual");
+	if (imgMan.src.match(/btn_rnd_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
+	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
 	return false;
 }
 
@@ -128,8 +218,18 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
 								<div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-								</div><br><br> <a href="light.html">Light Settings</a> 
+								</div><br><br><br>
+								<div class="wrapper">
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
+								<p class="mbr-fonts-style pb-2 tagleft btngroup display-5">Auto</p>
+								<img id= "light_auto" src="btn_rnd_off.png" alt="BTN OFF" onClick="light_auto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "light_manual" src="btn_rnd_on.png" alt="BTN OFF" onClick="light_manual()" class="btnright btngroup" height="100" width="100">
+								
+								<p class="mbr-fonts-style pb-2 tagright btngroup display-5">Manual</p>
+								</div><br>
+								
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your lights from here.</p>
+							<a class="mbr-section-text  align-center mbr-fonts-style display-7" href="light.html">Light Settings</a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +247,14 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
 								</div><div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-								</div><br><br>
+								</div><br><br><br>
+								<div class="wrapper">
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
+								<p class="mbr-fonts-style pb-2 tagleft btngroup display-5">Auto</p>
+								<img id= "feed_auto" src="btn_rnd_off.png" alt="BTN OFF" onClick="feed_auto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "feed_manual" src="btn_rnd_on.png" alt="BTN OFF" onClick="feed_manual()" class="btnright btngroup" height="100" width="100">
+								<p class="mbr-fonts-style pb-2 tagright btngroup display-5">Manual</p>
+								</div><br>
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your feeder from here.</p>
                         </div>
                     </div>
@@ -166,7 +273,14 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
 								</div><div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-								</div><br><br>
+								</div><br><br><br>
+								<div class="wrapper">
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
+								<p class="mbr-fonts-style pb-2 tagleft btngroup display-5">Auto</p>
+								<img id= "temp_auto" src="btn_rnd_off.png" alt="BTN OFF" onClick="temp_auto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "temp_manual" src="btn_rnd_on.png" alt="BTN OFF" onClick="temp_manual()" class="btnright btngroup" height="100" width="100">
+								<p class="mbr-fonts-style pb-2 tagright btngroup display-5">Manual</p>
+								</div><br>
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your temperature from here.</p>
                         </div>
                     </div>
@@ -185,7 +299,14 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
 								</div><div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-								</div><br><br>
+								</div><br><br><br>
+								<div class="wrapper">
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
+								<p class="mbr-fonts-style pb-2 tagleft btngroup display-5">Auto</p>
+								<img id= "filter_auto" src="btn_rnd_off.png" alt="BTN OFF" onClick="filter_auto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "filter_manual" src="btn_rnd_on.png" alt="BTN OFF" onClick="filter_manual()" class="btnright btngroup" height="100" width="100">
+								<p class="mbr-fonts-style pb-2 tagright btngroup display-5">Manual</p>
+								</div><br>
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your lights from here.</p>
                         </div>
                     </div>
@@ -204,7 +325,14 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
 							</div><div class="slidecontainer">
 							<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-								</div><br><br>
+								</div><br><br><br>
+								<div class="wrapper">
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
+								<p class="mbr-fonts-style pb-2 tagleft btngroup display-5">Auto</p>
+								<img id= "aux_auto" src="btn_rnd_off.png" alt="BTN OFF" onClick="aux_auto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "aux_manual" src="btn_rnd_on.png" alt="BTN OFF" onClick="aux_manual()" class="btnright btngroup" height="100" width="100">
+								<p class="mbr-fonts-style pb-2 tagright btngroup display-5">Manual</p>
+								</div><br>
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">For future expansion and development.</p>
                         </div>
                     </div>
