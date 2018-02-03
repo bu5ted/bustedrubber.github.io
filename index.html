@@ -56,18 +56,18 @@ function feed_auto()
 {
 	var imgAuto = document.getElementById("feed_auto");
 	var imgMan = document.getElementById("feed_manual");
-	if (imgAuto.src.match(/btn_rnd_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
-	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	if (imgAuto.src.match(/btn_rnd_auto_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_auto_off/) && imgMan.src.match(/btn_rnd_man_on/)) imgAuto.src = "btn_rnd_auto_on.png", imgMan.src = "btn_rnd_man_off.png";
+	else imgAuto.src = "btn_rnd_auto_on.png", imgMan.src = "btn_rnd_man_off.png";
 	return false;
 }
 function feed_manual()
 {
 	var imgAuto = document.getElementById("feed_auto");
 	var imgMan = document.getElementById("feed_manual");
-	if (imgMan.src.match(/btn_rnd_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
-	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	if (imgMan.src.match(/btn_rnd_man_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_man_off/) && imgMan.src.match(/btn_rnd_auto_on/)) imgAuto.src = "btn_rnd_auto_off.png", imgMan.src = "btn_rnd_man_on.png";
+	else imgAuto.src = "btn_rnd_auto_off.png", imgMan.src = "btn_rnd_man_on.png";
 	return false;
 }
 
@@ -250,10 +250,9 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
 								</div><br><br><br>
 								<div class="wrapper">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
-								<p class="mbr-fonts-style pb-2 tagleft btngroup display-5">Auto</p>
-								<img id= "feed_auto" src="btn_rnd_off.png" alt="BTN OFF" onClick="feed_auto()" class="btnleft btngroup" height="100" width="100">
-								<img id= "feed_manual" src="btn_rnd_on.png" alt="BTN OFF" onClick="feed_manual()" class="btnright btngroup" height="100" width="100">
-								<p class="mbr-fonts-style pb-2 tagright btngroup display-5">Manual</p>
+								<img id= "feed_auto" src="btn_rnd_auto_off.png" alt="BTN OFF" onClick="feed_auto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "feed_manual" src="btn_rnd_man_on.png" alt="BTN OFF" onClick="feed_manual()" class="btnright btngroup" height="100" width="100">
+								
 								</div><br>
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your feeder from here.</p>
                         </div>
