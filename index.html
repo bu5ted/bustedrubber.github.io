@@ -239,7 +239,7 @@ function clockColor(){
 		}
 		document.getElementsByClassName("clock")[0].classList.add(sendCLK);
 }
-var msgTime = setTimeout(welcomeMsg, 2500);
+<!-- var msgTime = setTimeout(welcomeMsg, 2500); -->
 function welcomeMsg(){
 alert("Click title bar at top of page to change backgrounds...30 to choose from!");
 alert("Click clock text to change color...18 to choose from!");
@@ -361,8 +361,9 @@ clearTimeout(msgTime);
 								<div class="box">
 								<img id= "tempbtn" src="assets/images/buttons/power_off.png" alt="LED OFF" onClick="tempPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 								</div><div class="slidecontainer">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
-								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">Set Temperature</h3>
+								<input type="range" min="1" max="100" class="slider" value="50" id="myRange">
+								
 								</div><br><br><br>
 								<div class="wrapper">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>

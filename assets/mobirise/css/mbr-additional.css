@@ -3530,11 +3530,15 @@ body {
 
 /* The slider itself */
 .slider {
+	margin-left: 20px;
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 100%; /* Full-width */
-    height: 20px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
+    width: 512px; /* Full-width */
+    height: 70px; /* Specified height */
+    background: transparent; /* Grey background */
+	text-align: center;
+    overflow: hidden;
+    background: url("../../../assets/images/sliders/slide_bg.png");
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -3550,17 +3554,19 @@ body {
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #0d6786; /* Green background */
+	border-radius: 50%;
+    width: 64px; /* Set a specific slider handle width */
+    height: 64px; /* Slider handle height */
+    background: url("../../../assets/images/sliders/slide_knob.png");
     cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 64px; /* Set a specific slider handle width */
+    height: 64px; /* Slider handle height */
     background: #0d6786; /* Green background */
     cursor: pointer; /* Cursor on hover */
+	border-radius: 50%;
 } 
 
 .bgBtn {
@@ -3624,3 +3630,4 @@ body {
 .clock17 {
 	color: gold;
 }
+
