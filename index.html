@@ -245,6 +245,14 @@ alert("Click title bar at top of page to change backgrounds...30 to choose from!
 alert("Click clock text to change color...18 to choose from!");
 clearTimeout(msgTime);
 }
+
+var testwidth = setInterval(getWidth,2000);
+
+function getWidth(){
+var divWidth = document.getElementsByClassName("slidecontainer")[0].clientWidth;
+alert(divWidth);
+clearTimeout(testwidth);
+}
     
 </script>
   
