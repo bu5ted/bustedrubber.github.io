@@ -3530,10 +3530,9 @@ body {
 
 /* The slider itself */
 .slider {
-	margin-left: 20px;
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 512px; /* Full-width */
+    width: 100%; /* Full-width */
     height: 70px; /* Specified height */
     background: transparent; /* Grey background */
 	text-align: center;
