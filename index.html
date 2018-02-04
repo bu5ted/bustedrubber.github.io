@@ -239,7 +239,12 @@ function clockColor(){
 		}
 		document.getElementsByClassName("clock")[0].classList.add(sendCLK);
 }
-	
+var msgTime = setTimeout(welcomeMsg, 1500);
+function welcomeMsg(){
+alert("Click title bar at top of page to change backgrounds...30 to choose from!");
+alert("Click clock text to change color...18 to choose from!");
+clearTimeout(msgTime);
+}
     
 </script>
   
