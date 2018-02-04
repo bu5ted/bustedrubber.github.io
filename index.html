@@ -21,11 +21,9 @@
    
 function lightPower()
 {
-
 	var img = document.getElementById("lightbtn");
 	if(img.src.match(/on/)) img.src = "assets/images/off.gif";
 	else img.src = "assets/images/on.gif";
-	nextBackground();
 	return false;
 }
 function light_auto()
@@ -143,6 +141,7 @@ function aux_auto()
 }
 function aux_manual()
 {
+bgChange();
 	var imgAuto = document.getElementById("aux_auto");
 	var imgMan = document.getElementById("aux_manual");
 	if (imgMan.src.match(/btn_rnd_man_on/)) return;
@@ -167,26 +166,59 @@ var d = new Date(),
 	if (hours >= 13 && hours <=23){
 	hours -= 12;
 	}
+	if (hours == 0){
+	hours = 12;
+	}
 return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
 }
 
+var countBG = 0;
+
+function bgChange(){
+	countBG++;
+	if (countBG >=30) countBG = 0;
+	var sendBG = "bg"+countBG
+	for(i = 0; i < 30; i++) {
+	var rem = "bg"+i;
+			document.getElementsByClassName("tabs3")[0].classList.remove(rem);
+		}
+		document.getElementsByClassName("tabs3")[0].classList.add(sendBG);
+		document.getElementsByClassName("tabs3")[0].classList.add(mbr-parallax-background)
+		
+}
+var countClock = 0
+function clockColor(){
+		countClock++;
+	if (countClock >=19) countClock = 0;
+	var sendCLK = "clock"+countClock
+	for(i = 0; i < 19; i++) {
+	var rem = "clock"+i;
+			document.getElementsByClassName("clock")[0].classList.remove(rem);
+		}
+		document.getElementsByClassName("clock")[0].classList.add(sendCLK);
+}
+	
     
 </script>
   
 </head>
 <body>
-  <section class="tabs3 cid-qIyNpVp9TQ mbr-parallax-background" id="tabs3-p">
+<div class="title_bar">
+	<img id= "title_bar" src="assets/images/bg/title_bar.png" alt="title_bar" onClick="bgChange()" class="title_bar">
+	</div>
+  <section class="bg0 tabs3"  id="tabs3-p">
 
     
 
     
 
     <div class="container">
+	
         <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
            RPi3 Tank Controller</h2>
 		   
-        <h3 class="mbr-section-subtitle  display-58 align-center mbr-light mbr-fonts-style">
-            <div id="clock"></div></h3>
+        <h3 class="mbr-section-subtitle  display-58 align-center mbr-light mbr-fonts-style"> 
+            <a href="#"><div class="clock clock0" onClick="clockColor()" id="clock" ></div></a></h3>
 			
     </div>
 	
@@ -334,6 +366,7 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
             </div>
         </div>
     </div>
+	
 </section>
 
 
