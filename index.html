@@ -22,34 +22,34 @@
 function lightPower()
 {
 	var img = document.getElementById("lightbtn");
-	if(img.src.match(/on/)) img.src = "off.gif";
-	else img.src = "on.gif";
+	if(img.src.match(/on/)) img.src = "assets/images/off.gif";
+	else img.src = "assets/images/on.gif";
 	return false;
 }
 function light_auto()
 {
 	var imgAuto = document.getElementById("light_auto");
 	var imgMan = document.getElementById("light_manual");
-	if (imgAuto.src.match(/btn_rnd_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
-	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	if (imgAuto.src.match(/btn_rnd_auto_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_auto_off/) && imgMan.src.match(/btn_rnd_man_on/)) imgAuto.src = "assets/images/btn_rnd_auto_on.png", imgMan.src = "assets/images/btn_rnd_man_off.png";
+	else imgAuto.src = "assets/images/btn_rnd_auto_off.png", imgMan.src = "assets/images/btn_rnd_man_on.png";
 	return false;
 }
 function light_manual()
 {
 	var imgAuto = document.getElementById("light_auto");
 	var imgMan = document.getElementById("light_manual");
-	if (imgMan.src.match(/btn_rnd_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
-	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	if (imgMan.src.match(/btn_rnd_man_on/)) return;
+	if(imgMan.src.match(/btn_rnd_man_off/) && imgAuto.src.match(/btn_rnd_auto_on/)) imgAuto.src = "assets/images/btn_rnd_auto_off.png", imgMan.src = "assets/images/btn_rnd_man_on.png";
+	else imgAuto.src = "assets/images/btn_rnd_auto_on.png", imgMan.src = "assets/images/btn_rnd_man_off.png";
 	return false;
 }
 
 function feederPower()
 {
 	var img = document.getElementById("feedbtn");
-	if(img.src.match(/on/)) img.src = "off.gif";
-	else img.src = "on.gif";
+	if(img.src.match(/on/)) img.src = "assets/images/off.gif";
+	else img.src = "assets/images/on.gif";
 	return false;
 }
 function feed_auto()
@@ -57,8 +57,8 @@ function feed_auto()
 	var imgAuto = document.getElementById("feed_auto");
 	var imgMan = document.getElementById("feed_manual");
 	if (imgAuto.src.match(/btn_rnd_auto_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_auto_off/) && imgMan.src.match(/btn_rnd_man_on/)) imgAuto.src = "btn_rnd_auto_on.png", imgMan.src = "btn_rnd_man_off.png";
-	else imgAuto.src = "btn_rnd_auto_on.png", imgMan.src = "btn_rnd_man_off.png";
+	if(imgAuto.src.match(/btn_rnd_auto_off/) && imgMan.src.match(/btn_rnd_man_on/)) imgAuto.src = "assets/images/btn_rnd_auto_on.png", imgMan.src = "assets/images/btn_rnd_man_off.png";
+	else imgAuto.src = "assets/images/btn_rnd_auto_off.png", imgMan.src = "assets/images/btn_rnd_man_on.png";
 	return false;
 }
 function feed_manual()
@@ -66,86 +66,86 @@ function feed_manual()
 	var imgAuto = document.getElementById("feed_auto");
 	var imgMan = document.getElementById("feed_manual");
 	if (imgMan.src.match(/btn_rnd_man_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_man_off/) && imgMan.src.match(/btn_rnd_auto_on/)) imgAuto.src = "btn_rnd_auto_off.png", imgMan.src = "btn_rnd_man_on.png";
-	else imgAuto.src = "btn_rnd_auto_off.png", imgMan.src = "btn_rnd_man_on.png";
+	if(imgMan.src.match(/btn_rnd_man_off/) && imgAuto.src.match(/btn_rnd_auto_on/)) imgAuto.src = "assets/images/btn_rnd_auto_off.png", imgMan.src = "assets/images/btn_rnd_man_on.png";
+	else imgAuto.src = "assets/images/btn_rnd_auto_on.png", imgMan.src = "assets/images/btn_rnd_man_off.png";
 	return false;
 }
 
 function tempPower()
 {
 	var img = document.getElementById("tempbtn");
-	if(img.src.match(/on/)) img.src = "off.gif";
-	else img.src = "on.gif";
+	if(img.src.match(/on/)) img.src = "assets/images/off.gif";
+	else img.src = "assets/images/on.gif";
 	return false;
 }
 function temp_auto()
 {
 	var imgAuto = document.getElementById("temp_auto");
 	var imgMan = document.getElementById("temp_manual");
-	if (imgAuto.src.match(/btn_rnd_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
-	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	if (imgAuto.src.match(/btn_rnd_auto_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_auto_off/) && imgMan.src.match(/btn_rnd_man_on/)) imgAuto.src = "assets/images/btn_rnd_auto_on.png", imgMan.src = "assets/images/btn_rnd_man_off.png";
+	else imgAuto.src = "assets/images/btn_rnd_auto_off.png", imgMan.src = "assets/images/btn_rnd_man_on.png";
 	return false;
 }
 function temp_manual()
 {
 	var imgAuto = document.getElementById("temp_auto");
 	var imgMan = document.getElementById("temp_manual");
-	if (imgMan.src.match(/btn_rnd_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
-	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	if (imgMan.src.match(/btn_rnd_man_on/)) return;
+	if(imgMan.src.match(/btn_rnd_man_off/) && imgAuto.src.match(/btn_rnd_auto_on/)) imgAuto.src = "assets/images/btn_rnd_auto_off.png", imgMan.src = "assets/images/btn_rnd_man_on.png";
+	else imgAuto.src = "assets/images/btn_rnd_auto_on.png", imgMan.src = "assets/images/btn_rnd_man_off.png";
 	return false;
 }
 
 function filterPower()
 {
 	var img = document.getElementById("filterbtn");
-	if(img.src.match(/on/)) img.src = "off.gif";
-	else img.src = "on.gif";
+	if(img.src.match(/on/)) img.src = "assets/images/off.gif";
+	else img.src = "assets/images/on.gif";
 	return false;
 }
 function filter_auto()
 {
 	var imgAuto = document.getElementById("filter_auto");
 	var imgMan = document.getElementById("filter_manual");
-	if (imgAuto.src.match(/btn_rnd_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
-	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	if (imgAuto.src.match(/btn_rnd_auto_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_auto_off/) && imgMan.src.match(/btn_rnd_man_on/)) imgAuto.src = "assets/images/btn_rnd_auto_on.png", imgMan.src = "assets/images/btn_rnd_man_off.png";
+	else imgAuto.src = "assets/images/btn_rnd_auto_off.png", imgMan.src = "assets/images/btn_rnd_man_on.png";
 	return false;
 }
 function filter_manual()
 {
 	var imgAuto = document.getElementById("filter_auto");
 	var imgMan = document.getElementById("filter_manual");
-	if (imgMan.src.match(/btn_rnd_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
-	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	if (imgMan.src.match(/btn_rnd_man_on/)) return;
+	if(imgMan.src.match(/btn_rnd_man_off/) && imgAuto.src.match(/btn_rnd_auto_on/)) imgAuto.src = "assets/images/btn_rnd_auto_off.png", imgMan.src = "assets/images/btn_rnd_man_on.png";
+	else imgAuto.src = "assets/images/btn_rnd_on.png", imgMan.src = "assets/images/btn_rnd_off.png";
 	return false;
 }
 
 function auxPower()
 {
 	var img = document.getElementById("auxbtn");
-	if(img.src.match(/on/)) img.src = "off.gif";
-	else img.src = "on.gif";
+	if(img.src.match(/on/)) img.src = "assets/images/off.gif";
+	else img.src = "assets/images/on.gif";
 	return false;
 }
 function aux_auto()
 {
 	var imgAuto = document.getElementById("aux_auto");
 	var imgMan = document.getElementById("aux_manual");
-	if (imgAuto.src.match(/btn_rnd_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
-	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	if (imgAuto.src.match(/btn_rnd_auto_on/)) return;
+	if(imgAuto.src.match(/btn_rnd_auto_off/) && imgMan.src.match(/btn_rnd_man_on/)) imgAuto.src = "assets/images/btn_rnd_auto_on.png", imgMan.src = "assets/images/btn_rnd_man_off.png";
+	else imgAuto.src = "assets/images/btn_rnd_auto_off.png", imgMan.src = "assets/images/btn_rnd_man_on.png";
 	return false;
 }
 function aux_manual()
 {
 	var imgAuto = document.getElementById("aux_auto");
 	var imgMan = document.getElementById("aux_manual");
-	if (imgMan.src.match(/btn_rnd_on/)) return;
-	if(imgAuto.src.match(/btn_rnd_on/) && imgMan.src.match(/btn_rnd_off/)) imgAuto.src = "btn_rnd_off.png", imgMan.src = "btn_rnd_on.png";
-	else imgAuto.src = "btn_rnd_on.png", imgMan.src = "btn_rnd_off.png";
+	if (imgMan.src.match(/btn_rnd_man_on/)) return;
+	if(imgMan.src.match(/btn_rnd_man_off/) && imgAuto.src.match(/btn_rnd_auto_on/)) imgAuto.src = "assets/images/btn_rnd_auto_off.png", imgMan.src = "assets/images/btn_rnd_man_on.png";
+	else imgAuto.src = "assets/images/btn_rnd_auto_on.png", imgMan.src = "assets/images/btn_rnd_man_off.png";
 	return false;
 }
 
@@ -213,7 +213,7 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
                             <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
                                 Lighting Control</h4>
 								<div class="box">
-								<img id= "lightbtn" src="off.gif" alt="LED OFF" onClick="lightPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
+								<img id= "lightbtn" src="assets/images/off.gif" alt="LED OFF" onClick="lightPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 								</div>
 								<div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
@@ -221,11 +221,8 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
 								</div><br><br><br>
 								<div class="wrapper">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
-								<p class="mbr-fonts-style pb-2 tagleft btngroup display-5">Auto</p>
-								<img id= "light_auto" src="btn_rnd_off.png" alt="BTN OFF" onClick="light_auto()" class="btnleft btngroup" height="100" width="100">
-								<img id= "light_manual" src="btn_rnd_on.png" alt="BTN OFF" onClick="light_manual()" class="btnright btngroup" height="100" width="100">
-								
-								<p class="mbr-fonts-style pb-2 tagright btngroup display-5">Manual</p>
+								<img id= "light_auto" src="assets/images/btn_rnd_auto_off.png" alt="BTN OFF" onClick="light_auto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "light_manual" src="assets/images/btn_rnd_man_on.png" alt="BTN OFF" onClick="light_manual()" class="btnright btngroup" height="100" width="100">
 								</div><br>
 								
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your lights from here.</p>
@@ -243,15 +240,15 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
                             <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
                                 Feeder Control</h4>
 								<div class="box">
-								<img id= "feedbtn" src="off.gif" alt="LED OFF" onClick="feederPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
+								<img id= "feedbtn" src="assets/images/off.gif" alt="LED OFF" onClick="feederPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 								</div><div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Amount</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 								</div><br><br><br>
 								<div class="wrapper">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
-								<img id= "feed_auto" src="btn_rnd_auto_off.png" alt="BTN OFF" onClick="feed_auto()" class="btnleft btngroup" height="100" width="100">
-								<img id= "feed_manual" src="btn_rnd_man_on.png" alt="BTN OFF" onClick="feed_manual()" class="btnright btngroup" height="100" width="100">
+								<img id= "feed_auto" src="assets/images/btn_rnd_auto_off.png" alt="BTN OFF" onClick="feed_auto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "feed_manual" src="assets/images/btn_rnd_man_on.png" alt="BTN OFF" onClick="feed_manual()" class="btnright btngroup" height="100" width="100">
 								
 								</div><br>
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your feeder from here.</p>
@@ -268,17 +265,15 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
                             <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
                                 Temperature Control</h4>
 								<div class="box">
-								<img id= "tempbtn" src="off.gif" alt="LED OFF" onClick="tempPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
+								<img id= "tempbtn" src="assets/images/off.gif" alt="LED OFF" onClick="tempPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 								</div><div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 								</div><br><br><br>
 								<div class="wrapper">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
-								<p class="mbr-fonts-style pb-2 tagleft btngroup display-5">Auto</p>
-								<img id= "temp_auto" src="btn_rnd_off.png" alt="BTN OFF" onClick="temp_auto()" class="btnleft btngroup" height="100" width="100">
-								<img id= "temp_manual" src="btn_rnd_on.png" alt="BTN OFF" onClick="temp_manual()" class="btnright btngroup" height="100" width="100">
-								<p class="mbr-fonts-style pb-2 tagright btngroup display-5">Manual</p>
+								<img id= "temp_auto" src="assets/images/btn_rnd_auto_off.png" alt="BTN OFF" onClick="temp_auto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "temp_manual" src="assets/images/btn_rnd_man_on.png" alt="BTN OFF" onClick="temp_manual()" class="btnright btngroup" height="100" width="100">
 								</div><br>
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your temperature from here.</p>
                         </div>
@@ -294,17 +289,15 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
                             <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
                                 Filter Control</h4>
 								<div class="box">
-								<img id= "filterbtn" src="off.gif" alt="LED OFF" onClick="filterPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
+								<img id= "filterbtn" src="assets/images/off.gif" alt="LED OFF" onClick="filterPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 								</div><div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 								</div><br><br><br>
 								<div class="wrapper">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
-								<p class="mbr-fonts-style pb-2 tagleft btngroup display-5">Auto</p>
-								<img id= "filter_auto" src="btn_rnd_off.png" alt="BTN OFF" onClick="filter_auto()" class="btnleft btngroup" height="100" width="100">
-								<img id= "filter_manual" src="btn_rnd_on.png" alt="BTN OFF" onClick="filter_manual()" class="btnright btngroup" height="100" width="100">
-								<p class="mbr-fonts-style pb-2 tagright btngroup display-5">Manual</p>
+								<img id= "filter_auto" src="assets/images/btn_rnd_auto_off.png" alt="BTN OFF" onClick="filter_auto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "filter_manual" src="assets/images/btn_rnd_man_on.png" alt="BTN OFF" onClick="filter_manual()" class="btnright btngroup" height="100" width="100">
 								</div><br>
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your lights from here.</p>
                         </div>
@@ -320,17 +313,15 @@ return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYe
                             <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
                                 Auxillary Control</h4>
 								<div class="box">
-							<img id= "auxbtn" src="off.gif" alt="LED OFF" onClick="auxPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
+							<img id= "auxbtn" src="assets/images/off.gif" alt="LED OFF" onClick="auxPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 							</div><div class="slidecontainer">
 							<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 								</div><br><br><br>
 								<div class="wrapper">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
-								<p class="mbr-fonts-style pb-2 tagleft btngroup display-5">Auto</p>
-								<img id= "aux_auto" src="btn_rnd_off.png" alt="BTN OFF" onClick="aux_auto()" class="btnleft btngroup" height="100" width="100">
-								<img id= "aux_manual" src="btn_rnd_on.png" alt="BTN OFF" onClick="aux_manual()" class="btnright btngroup" height="100" width="100">
-								<p class="mbr-fonts-style pb-2 tagright btngroup display-5">Manual</p>
+								<img id= "aux_auto" src="assets/images/btn_rnd_auto_off.png" alt="BTN OFF" onClick="aux_auto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "aux_manual" src="assets/images/btn_rnd_man_on.png" alt="BTN OFF" onClick="aux_manual()" class="btnright btngroup" height="100" width="100">
 								</div><br>
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">For future expansion and development.</p>
                         </div>
