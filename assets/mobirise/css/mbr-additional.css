@@ -3530,6 +3530,8 @@ body {
 
 /* The slider itself */
 .slider {
+	max-width: 100%;
+    min-width: 300px;
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
