@@ -18,12 +18,14 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   <script>
-    
+   
 function lightPower()
 {
+
 	var img = document.getElementById("lightbtn");
 	if(img.src.match(/on/)) img.src = "assets/images/off.gif";
 	else img.src = "assets/images/on.gif";
+	nextBackground();
 	return false;
 }
 function light_auto()

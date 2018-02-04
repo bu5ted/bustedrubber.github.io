@@ -1492,7 +1492,7 @@ body {
 .cid-qIyNpVp9TQ {
   padding-top: 75px;
   padding-bottom: 135px;
-  background-image: url("../../../assets/images/15-2-1920x1080.png");
+  background-image: url("../../../assets/images/bg/1.png");
 }
 .cid-qIyNpVp9TQ .mbr-section-text {
   color: #767676;
@@ -1647,3 +1647,9 @@ body {
     background: #0d6786; /* Green background */
     cursor: pointer; /* Cursor on hover */
 } 
+
+.bg1 {
+  padding-top: 75px;
+  padding-bottom: 135px;
+  background-image: url("../../../assets/images/5.png");
+}
