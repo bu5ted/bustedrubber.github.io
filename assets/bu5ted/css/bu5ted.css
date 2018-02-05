@@ -125,7 +125,7 @@
   margin-left: 30px
 }	
 .title_bar {
-	width: 100%
+	width: auto;
 	text-align: center;
 	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -182,19 +182,26 @@
 
 .slidecontainer {
     width: 100%; /* Width of the outside container */
+	-webkit-justify-content: center;
+  justify-content: center;
 }
 .slidecontainer_m {
     width: 80%; /* Width of the outside container */
+	-webkit-justify-content: center;
+  justify-content: center;
 }
 
 /* The slider itself */
 .slider {
+	-webkit-justify-content: center;
+  justify-content: center;
 	margin-left:0;
 	max-width: 100%;
+    min-width: 20%;
     -webkit-appearance: none;  /*Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
-    height: auto; /* Specified height */
+    height: 70px; /* Specified height */
     background: transparent; /* Grey background */
 	text-align: center;
     background: url("../../../assets/images/sliders/slide_bg.png");
