@@ -60,11 +60,11 @@
 								</div>
 								<div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">White Brightness</h3>
-								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+								<input type="range" min="1" max="100" value="50" class="brightness_slider" id="myRange">
 								</div><br><br>
 								<div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">Color Brightness</h3>
-								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+								<input type="range" min="1" max="100" value="50" class="brightness_slider" id="myRange">
 								</div><br><br><br>
 								<div class="wrapper">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr"> Mode</h3>
@@ -126,7 +126,7 @@
 								<img id= "tempbtn" src="assets/images/buttons/power_off.png" alt="LED OFF" onClick="tempPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 								</div><div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">Set Temperature</h3>
-								<input type="range" min="60" max="90" class="slider" value="74" id="set_temp oninput="getTempValue(this.value)" onchange="getTempValue(this.value)">
+								<input type="range" min="60" max="90" class="slider" value="74" id="set_temp oninput="getTempValue(this.value)" onchange="getTempValue(this.value)" data-show-value="true">
 								<p id="set_temp_label" class="colorBlack align-center mbr-fonts-style display-5">74</p>
 								</div><br><br>
 								<div class="wrapper">
@@ -159,15 +159,16 @@
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">Filter Flow</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 								</div><br><br><br>
-								<div class="wrapper">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Mode</h3>
-								<img id= "filter_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="filter_auto()" class="btnleft btngroup" height="100" width="100">
-								<img id= "filter_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="filter_manual()" class="btnright btngroup" height="100" width="100">
-								</div><br><br>
 								<div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">Filter Life</h3>
 								<input type="range" min="1" max="100" value="30" class="filter_slider" id="filterSlide">
 								</div><br><br><br><br>
+								<div class="wrapper">
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Options</h3>
+								<img id= "filter_reset" src="assets/images/buttons/reset_off.png" alt="BTN OFF" onClick="filter_reset()" class="btnleft btngroup" height="100" width="100">
+								<img id= "filter_calibrate" src="assets/images/buttons/calibrate_off.png" alt="BTN OFF" onClick="filter_calibrate()" class="btnright btngroup" height="100" width="100">
+								</div><br><br>
+								
                         </div>
                     </div>
                 </div>

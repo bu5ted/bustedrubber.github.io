@@ -141,23 +141,35 @@ function filterPower()
 	else img.src = "assets/images/buttons/power_on.png";
 	return false;
 }
-function filter_auto()
+function filter_reset()
 {
-	var imgAuto = document.getElementById("filter_auto");
-	var imgMan = document.getElementById("filter_manual");
-	if (imgAuto.src.match(/auto_on/)) return;
-	if(imgAuto.src.match(/auto_off/) && imgMan.src.match(/manual_on/)) imgAuto.src = "assets/images/buttons/auto_on.png", imgMan.src = "assets/images/buttons/manual_off.png";
-	else imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
+	var img = document.getElementById("filter_reset");
+	var fs = document.getElementById("filter_slider");
+	if(img.src.match(/reset_on/)) return;
+	if (img.src.match(/reset_off/)) img.src = "assets/images/buttons/reset_on.png";
+	btnTime = setTimeout(filterRelease, 1000);
+	if(confirm("Would you like to reset filter change time?")){
+		document.getElementById("filterSlide").value = "0"; 
+	}
 	return false;
 }
-function filter_manual()
+function filter_calibrate()
 {
-	var imgAuto = document.getElementById("filter_auto");
-	var imgMan = document.getElementById("filter_manual");
-	if (imgMan.src.match(/manual_on/)) return;
-	if(imgMan.src.match(/manual_off/) && imgAuto.src.match(/auto_on/)) imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
-	else imgAuto.src = "assets/images/btn_rnd_on.png", imgMan.src = "assets/images/btn_rnd_off.png";
+	var img = document.getElementById("filter_calibrate");
+	if(img.src.match(/calibrate_on/)) return;
+	if (img.src.match(/calibrate_off/)) img.src = "assets/images/buttons/calibrate_on.png";
+	btnTime = setTimeout(filterRelease, 1000);
+	if (confirm("Would you like to go to calibration settings?")){
+		window.location.href="filter_calibration.html";
+	}
 	return false;
+}
+function filterRelease(){
+	var reset = document.getElementById("filter_reset");
+	var calibrate = document.getElementById("filter_calibrate");
+	reset.src = "assets/images/buttons/reset_off.png";
+	calibrate.src = "assets/images/buttons/calibrate_off.png";
+	clearTimeout(btnTime);
 }
 
 function auxPower()
