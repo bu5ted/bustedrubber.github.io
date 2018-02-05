@@ -183,11 +183,14 @@
 .slidecontainer {
     width: 100%; /* Width of the outside container */
 }
+.slidecontainer_m {
+    width: 80%; /* Width of the outside container */
+}
 
 /* The slider itself */
 .slider {
 	max-width: 100%;
-    min-width: 300px;
+    min-width: 100px;
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
@@ -220,7 +223,7 @@
 
 .filter_slider {
 	max-width: 100%;
-    min-width: 300px;
+    min-width: 100px;
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */

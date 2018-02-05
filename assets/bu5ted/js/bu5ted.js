@@ -5,8 +5,10 @@
 */
 var setupTimer = setInterval(setupAll, 500);
 function setupAll(){
-	document.getElementById("filterSlide").disabled = true; 
 	clearTimeout(setupTimer);
+	document.getElementById("filterSlide").disabled = true; 
+	setScreen();
+	
 }
 
 function lightPower()
@@ -270,9 +272,22 @@ function getWidth(){
 var divWidth = document.getElementsByClassName("slidecontainer")[0].clientWidth;
 alert(divWidth);
 clearTimeout(testwidth);
+return divWidth;
 }
 
 function getTempValue(val){
 	document.getElementById("set_temp_label").innerHTML = val;
 }
     
+function setScreen(){
+	var screenContainer = document.getElementsByClassName("slidecontainer")[0];
+
+	if (getWidth <= 479){
+		screenContainer.classList.remove(slidecontainer);
+		
+		screenContainer.classList.add(slidecontainer_m);
+	}
+	
+}
+	
+	
