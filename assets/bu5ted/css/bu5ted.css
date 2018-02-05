@@ -193,11 +193,8 @@
 
 /* The slider itself */
 .slider {
-	-webkit-justify-content: center;
-  justify-content: center;
-	margin-left:0;
 	max-width: 100%;
-    min-width: 20%;
+    min-width: 100px;
     -webkit-appearance: none;  /*Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
@@ -205,7 +202,8 @@
     background: transparent; /* Grey background */
 	text-align: center;
     background: url("../../../assets/images/sliders/slide_bg.png");
-	background-repeat:no-repeat;
+		background-size:100% 85%;
+	background-repeat: no-repeat;
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
