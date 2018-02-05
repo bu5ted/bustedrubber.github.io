@@ -7,9 +7,59 @@ var setupTimer = setInterval(setupAll, 500);
 function setupAll(){
 	clearTimeout(setupTimer);
 	document.getElementById("filterSlide").disabled = true; 
-	setScreen();
-	
+	bgLoad();
+	setTextColor();
 }
+
+
+function setTextColor(){
+	document.getElementById("mainTitle").style.color = localStorage.getItem("titleColor");
+	document.getElementById("clock").style.color = localStorage.getItem("clockColor");
+	document.getElementById("lightheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("feedheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("tempheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("filterheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("auxheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("whitebrightness").style.color = localStorage.getItem("headingColor");
+	document.getElementById("colorBrightness").style.color = localStorage.getItem("headingColor");
+	document.getElementById("lmodeheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("effectheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("amountheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("fmodeheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("snackheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("last_feeding").style.color = localStorage.getItem("headingColor");
+	document.getElementById("next_feeding").style.color = localStorage.getItem("headingColor");
+	document.getElementById("setheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("tmodeheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("temp1").style.color = localStorage.getItem("headingColor");
+	document.getElementById("temp2").style.color = localStorage.getItem("headingColor");
+	document.getElementById("flowheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("lifeheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("optionheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("auxbrightheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("amodeheader").style.color = localStorage.getItem("headingColor");
+	document.getElementById("temp1_label").style.color = localStorage.getItem("infoColor");
+	document.getElementById("temp2_label").style.color = localStorage.getItem("infoColor");
+	document.getElementById("last_feeding_label").style.color = localStorage.getItem("infoColor");
+	document.getElementById("next_feeding_label").style.color = localStorage.getItem("infoColor");
+}
+
+function settingPage(){
+	window.location.href="main_settings.html";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function lightPower()
 {
@@ -246,20 +296,18 @@ var d = new Date(),
 	}
 }
 
-var countBG = 0;
-
-function bgChange(){
-	countBG++;
-	if (countBG >=30) countBG = 0;
-	var sendBG = "bg"+countBG
+function bgLoad(){
+	var bgnum = localStorage.getItem("background");
+	var sendBG = "bg"+bgnum
 	for(i = 0; i < 30; i++) {
 	var rem = "bg"+i;
 			document.getElementsByClassName("tabs3")[0].classList.remove(rem);
 		}
 		document.getElementsByClassName("tabs3")[0].classList.add(sendBG);
-		document.getElementsByClassName("tabs3")[0].classList.add(mbr-parallax-background)
+		document.getElementsByClassName("tabs3")[0].classList.add("mbr-parallax-background");
 		
 }
+
 var countClock = 0
 function clockColor(){
 		countClock++;
@@ -271,35 +319,9 @@ function clockColor(){
 		}
 		document.getElementsByClassName("clock")[0].classList.add(sendCLK);
 }
-<!-- var msgTime = setTimeout(welcomeMsg, 2500); -->
-function welcomeMsg(){
-alert("Click title bar at top of page to change backgrounds...30 to choose from!");
-alert("Click clock text to change color...18 to choose from!");
-clearTimeout(msgTime);
-}
-
-<!-- var testwidth = setInterval(getWidth,2000); -->
-
-function getWidth(){
-var divWidth = document.getElementsByClassName("slidecontainer")[0].clientWidth;
-alert(divWidth);
-clearTimeout(testwidth);
-return divWidth;
-}
 
 function getTempValue(val){
 	document.getElementById("set_temp_label").innerHTML = val;
-}
-    
-function setScreen(){
-	var screenContainer = document.getElementsByClassName("slidecontainer")[0];
-
-	if (getWidth <= 479){
-		screenContainer.classList.remove(slidecontainer);
-		
-		screenContainer.classList.add(slidecontainer_m);
-	}
-	
 }
 	
 	

@@ -1,0 +1,143 @@
+div.gallery {
+	opacity: 1.0;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+	opacity: 0.7;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.colorpicker {
+	-webkit-justify-content: center;
+    justify-content: center;
+	text-align: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+	display: inline-block;
+	margin-bottom:10px;
+	position: relative;
+    bottom: 10px;
+	width:20%;
+	height:40px;
+}
+.colorpicker:hover {
+	text-align: center;
+    overflow: hidden;
+    border: 1px solid #777;
+}
+.text {
+	display: inline-block;
+	text-align: right;
+    overflow: hidden;
+	margin-left:20px;
+	width:15%;
+}
+
+div.cont {
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+    border: 1px solid #ccc;
+}
+
+div.cont:hover {
+    border: 1px solid #777;
+	opacity: 1.0;
+}
+
+div.cont img {
+    width: 100%;
+    height: auto;
+}
+
+.accept {
+    width:50%;
+	height:40px;
+	display: inline-block;
+	text-align: center;
+    overflow: hidden;
+	margin-top:20px;
+	background-color:dimgrey;
+	opacity: 1.0;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	border: 3pt ridge lightgrey;
+	color:black;
+	font-size: 24px;
+}
+.accept:hover {
+    width:50%;
+	height:40px;
+	display: inline-block;
+	text-align: center;
+    overflow: hidden;
+	margin-top:20px;
+	border: 3pt ridge gray;
+	opacity: 0.7;
+	color:darkslategrey;
+	background-color:darkgrey;
+}
+
+.accept:active {
+    width:50%;
+	height:40px;
+	display: inline-block;
+	text-align: center;y
+    overflow: hidden;
+	margin-top:20px;
+	border: 3pt solid lime;
+	color:lime;
+	background-color:silver;
+	
+}
+
+
+.select {
+    width: 100%;
+	display: inline-block;
+	text-align: center;
+    overflow: hidden;
+	margin-top:40px;
+}
