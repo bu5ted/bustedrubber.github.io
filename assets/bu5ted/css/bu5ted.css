@@ -195,7 +195,7 @@
     min-width: 100px;
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 100%; /* Full-width */
+    width: 80%; /* Full-width */
     height: 70px; /* Specified height */
     background: transparent; /* Grey background */
 	text-align: center;
