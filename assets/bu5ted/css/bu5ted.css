@@ -189,6 +189,8 @@
 
 /* The slider itself */
 .slider {
+	margin-left:0;
+	padding-right:20px;
 	max-width: 100%;
     min-width: 100px;
     -webkit-appearance: none;  /* Override default CSS styles */
