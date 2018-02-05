@@ -3,14 +3,33 @@
  * Date: 2/4/2018 
  * index.html function list
 */
+
 var setupTimer = setInterval(setupAll, 500);
+
 function setupAll(){
 	clearTimeout(setupTimer);
-	document.getElementById("filterSlide").disabled = true; 
-	bgLoad();
-	setTextColor();
+	if(localStorage.getItem("firstrun") === null || localStorage.getItem("firstrun").length ===0){
+		setFirstLoad();
+	}
+	else if (localStorage.getItem("firstrun") == "false"){
+		document.getElementById("filterSlide").disabled = true; 
+		bgLoad();
+		setTextColor();
+	}
+	else if (localStorage.getItem("firstrun") == "true"){
+		document.getElementById("filterSlide").disabled = true;
+		localStorage.setItem("firstrun", "false");
+	}	
+	
 }
 
+function setFirstLoad(){
+	alert("Welcome...app creation will take a few seconds, please be patient!");
+	bgFirstLoad(0);
+	localStorage.setItem("background", "0");
+	localStorage.setItem("firstrun", "true");
+	setupAll();
+}
 
 function setTextColor(){
 	document.getElementById("mainTitle").style.color = localStorage.getItem("titleColor");
@@ -296,9 +315,19 @@ var d = new Date(),
 	}
 }
 
+function bgFirstLoad(bgVar){
+	var sendBG = "bg"+bgVar;
+	for(i = 0; i < 30; i++) {
+	var rem = "bg"+i;
+			document.getElementsByClassName("tabs3")[0].classList.remove(rem);
+		}
+		document.getElementsByClassName("tabs3")[0].classList.add(sendBG);
+		document.getElementsByClassName("tabs3")[0].classList.add("mbr-parallax-background");	
+}
+
 function bgLoad(){
 	var bgnum = localStorage.getItem("background");
-	var sendBG = "bg"+bgnum
+	var sendBG = "bg"+bgnum;
 	for(i = 0; i < 30; i++) {
 	var rem = "bg"+i;
 			document.getElementsByClassName("tabs3")[0].classList.remove(rem);
