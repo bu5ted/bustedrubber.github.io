@@ -193,16 +193,19 @@
 
 /* The slider itself */
 .slider {
+	padding-left:5px;
+	padding-right:5px;
 	max-width: 100%;
     min-width: 100px;
-    -webkit-appearance: none;  /*Override default CSS styles */
+    -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
     height: 70px; /* Specified height */
     background: transparent; /* Grey background */
 	text-align: center;
+    overflow: hidden;
     background: url("../../../assets/images/sliders/slide_bg.png");
-		background-size:100% 85%;
+	background-size:100% 85%;
 	background-repeat: no-repeat;
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
@@ -227,6 +230,8 @@
 }
 
 .filter_slider {
+	padding-left:5px;
+	padding-right:5px;
 	max-width: 100%;
     min-width: 100px;
     -webkit-appearance: none;  /* Override default CSS styles */
