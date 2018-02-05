@@ -194,7 +194,7 @@
 	padding-left:10px;
 	max-width: 100%;
     min-width: 100px;
-    -webkit-appearance: none;  /* Override default CSS styles */
+     /*-webkit-appearance: none;  Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
     height: 70px; /* Specified height */
