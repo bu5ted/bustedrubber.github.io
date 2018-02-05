@@ -190,14 +190,11 @@
 /* The slider itself */
 .slider {
 	margin-left:0;
-	padding-right:10px;
-	padding-left:10px;
 	max-width: 100%;
-    min-width: 100px;
     -webkit-appearance: none;  /*Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
-    height: 70px; /* Specified height */
+    height: auto; /* Specified height */
     background: transparent; /* Grey background */
 	text-align: center;
     background: url("../../../assets/images/sliders/slide_bg.png");
