@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v4.6.3, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
   <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
   <meta name="description" content="">
   <title>RPi3 Tank Control</title>
@@ -53,26 +53,26 @@
                             <div class="card-img ">
                                 <span class="mbr-iconfont mbri-align-justify"></span>
                             </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
+                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">
                                 Lighting Control</h4>
 								<div class="box">
 								<img id= "lightbtn" src="assets/images/buttons/power_off.png" alt="LED OFF" onClick="lightPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 								</div>
 								<div class="slidecontainer">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">White Brightness</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">White Brightness</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 								</div><br><br>
 								<div class="slidecontainer">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">Color Brightness</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">Color Brightness</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 								</div><br><br><br>
 								<div class="wrapper">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr"> Mode</h3>
 								<img id= "light_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="light_auto()" class="btnleft btngroup" height="100" width="100">
 								<img id= "light_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="light_manual()" class="btnright btngroup" height="100" width="100">
 								</div><br>
 								<div class="wrapper">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Effect</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr"> Effect</h3>
 								<img id= "light_moonlight" src="assets/images/buttons/moonlight_off.png" alt="BTN OFF" onClick="lightMoonlight()" class="btnleft btngroup" height="100" width="100">
 								<img id= "light_daycycle" src="assets/images/buttons/daycycle_off.png" alt="BTN OFF" onClick="lightDaycycle()" class="btnright btngroup" height="100" width="100">
 								</div><br><br><br><br><br>
@@ -86,29 +86,29 @@
                             <div class="card-img ">
                                 <span class="mbr-iconfont mbri-align-justify"></span>
                             </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
+                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">
                                 Feeder Control</h4>
 								<div class="box">
 								<img id= "feedbtn" src="assets/images/buttons/power_off.png" alt="LED OFF" onClick="feederPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 								</div><div class="slidecontainer">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">Amount</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">Amount</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 								</div><br><br><br>
 								<div class="wrapper">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Mode</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Mode</h3>
 								<img id= "feed_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="feed_auto()" class="btnleft btngroup" height="100" width="100">
 								<img id= "feed_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="feed_manual()" class="btnright btngroup" height="100" width="100">
 								</div><br><br>
 								<div class="wrapper">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Snack/Feed</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Snack/Feed</h3>
 								<img id= "feed_snack" src="assets/images/buttons/snack_off.png" alt="BTN OFF" onClick="feed_snack()" class="btnleft btngroup" height="100" width="100">
 								<img id= "feed_quickfeed" src="assets/images/buttons/quickfeed_off.png" alt="BTN OFF" onClick="feed_quickfeed()" class="btnright btngroup" height="100" width="100">
 								</div><br><br>
 								<div class="wrapper">
-								<h3 id="last_feeding" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Last Feeding</h3>
-								<p id="last_feeding_label" class="mbr-section-text  align-center mbr-fonts-style display-7">..</p><br>
-								<h3 id="next_feeding" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Next Feeding</h3>
-								<p id="next_feeding_label" class="mbr-section-text  align-center mbr-fonts-style display-7">...</p>
+								<h3 id="last_feeding" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Last Feeding</h3>
+								<p id="last_feeding_label" class="mbr-section-text  align-center mbr-fonts-style display-5">..</p><br>
+								<h3 id="next_feeding" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Next Feeding</h3>
+								<p id="next_feeding_label" class="mbr-section-text  align-center mbr-fonts-style display-5">...</p>
 								</div><br><br><br><br><br>
                         </div>
                     </div>
@@ -120,25 +120,25 @@
                             <div class="card-img ">
                                 <span class="mbr-iconfont mbri-align-justify"></span>
                             </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
+                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">
                                 Temperature Control</h4>
 								<div class="box">
 								<img id= "tempbtn" src="assets/images/buttons/power_off.png" alt="LED OFF" onClick="tempPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 								</div><div class="slidecontainer">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">Set Temperature</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">Set Temperature</h3>
 								<input type="range" min="60" max="90" class="slider" value="74" id="set_temp oninput="getTempValue(this.value)" onchange="getTempValue(this.value)">
-								<p id="set_temp_label" class="mbr-section-text  align-center mbr-fonts-style display-7">74</p>
+								<p id="set_temp_label" class="mbr-section-text  align-center mbr-fonts-style display-5">74</p>
 								</div><br><br>
 								<div class="wrapper">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr"> Mode</h3>
 								<img id= "temp_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="temp_auto()" class="btnleft btngroup" height="100" width="100">
 								<img id= "temp_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="temp_manual()" class="btnright btngroup" height="100" width="100">
 								</div><br><br>
                             <div class="wrapper">
-								<h3 id="temp1" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Temp 1</h3>
-								<p id="temp1_label" class="mbr-section-text  align-center mbr-fonts-style display-7">73.8  F</p><br>
-								<h3 id="temp2" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Temp 2</h3>
-								<p id="temp2_label" class="mbr-section-text  align-center mbr-fonts-style display-7">74.1  F</p>
+								<h3 id="temp1" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Temp 1</h3>
+								<p id="temp1_label" class="mbr-section-text  align-center mbr-fonts-style display-5">73.8  F</p><br>
+								<h3 id="temp2" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Temp 2</h3>
+								<p id="temp2_label" class="mbr-section-text  align-center mbr-fonts-style display-5">74.1  F</p>
 							</div><br><br><br><br><br>
                         </div>
                     </div>
@@ -150,22 +150,22 @@
                             <div class="card-img ">
                                 <span class="mbr-iconfont mbri-align-justify"></span>
                             </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
+                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">
                                 Filter Control</h4>
 								<div class="box">
 								<img id= "filterbtn" src="assets/images/buttons/power_off.png" alt="LED OFF" onClick="filterPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 								</div>
 								<div class="slidecontainer">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">Filter Flow</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">Filter Flow</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 								</div><br><br><br>
 								<div class="wrapper">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Mode</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Mode</h3>
 								<img id= "filter_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="filter_auto()" class="btnleft btngroup" height="100" width="100">
 								<img id= "filter_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="filter_manual()" class="btnright btngroup" height="100" width="100">
-								</div><br>
+								</div><br><br>
 								<div class="slidecontainer">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">Filter Life</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">Filter Life</h3>
 								<input type="range" min="1" max="100" value="30" class="filter_slider" id="filterSlide">
 								</div><br><br><br><br>
                         </div>
@@ -178,16 +178,16 @@
                             <div class="card-img ">
                                 <span class="mbr-iconfont mbri-align-justify"></span>
                             </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
+                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58">
                                 Auxillary Control</h4>
 								<div class="box">
 							<img id= "auxbtn" src="assets/images/buttons/power_off.png" alt="LED OFF" onClick="auxPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 							</div><div class="slidecontainer">
-							<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
+							<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58"> Brightness</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 								</div><br><br><br>
 								<div class="wrapper">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr"> Mode</h3>
 								<img id= "aux_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="aux_auto()" class="btnleft btngroup" height="100" width="100">
 								<img id= "aux_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="aux_manual()" class="btnright btngroup" height="100" width="100">
 								</div><br>
