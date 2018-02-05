@@ -1,0 +1,287 @@
+/*!
+ * Author: Bu5ted Rubber (Steve)
+ * Date: 2/4/2018 
+ * Bu5ted Main CSS File
+*/
+
+.btn-light-power,
+.btn-light-power:active {
+  background-color: #149dcc !important;
+  border-color: #149dcc !important;
+  color: #ffffff !important;
+}
+.btn-light-power:hover,
+.btn-light-power:focus,
+.btn-light-power.focus,
+.btn-light-power.active {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+.btn-light-power.disabled,
+.btn-light-power:disabled {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+
+.btn-feed-power,
+.btn-feed-power:active {
+  background-color: #149dcc !important;
+  border-color: #149dcc !important;
+  color: #ffffff !important;
+}
+.btn-feed-power:hover,
+.btn-feed-power:focus,
+.btn-feed-power.focus,
+.btn-feed-power.active {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+.btn-feed-power.disabled,
+.btn-feed-power:disabled {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+
+.btn-temp-power,
+.btn-temp-power:active {
+  background-color: #149dcc !important;
+  border-color: #149dcc !important;
+  color: #ffffff !important;
+}
+.btn-temp-power:hover,
+.btn-temp-power:focus,
+.btn-temp-power.focus,
+.btn-temp-power.active {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+.btn-temp-power.disabled,
+.btn-temp-power:disabled {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+
+.btn-filter-power,
+.btn-filter-power:active {
+  background-color: #149dcc !important;
+  border-color: #149dcc !important;
+  color: #ffffff !important;
+}
+.btn-filter-power:hover,
+.btn-filter-power:focus,
+.btn-filter-power.focus,
+.btn-filter-power.active {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+.btn-filter-power.disabled,
+.btn-filter-power:disabled {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+
+.btn-aux-power,
+.btn-aux-power:active {
+  background-color: #149dcc !important;
+  border-color: #149dcc !important;
+  color: #ffffff !important;
+}
+.btn-aux-power:hover,
+.btn-aux-power:focus,
+.btn-aux-power.focus,
+.btn-aux-power.active {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+.btn-aux-power.disabled,
+.btn-aux-power:disabled {
+  color: #ffffff !important;
+  background-color: #0d6786 !important;
+  border-color: #0d6786 !important;
+}
+
+.btncontainer {
+    opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.btncontainer:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.wrapper {
+  text-align: center;
+  margin-left: 30px
+}	
+.title_bar {
+	width: 100%
+	text-align: center;
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+	
+    overflow: hidden; 
+}
+
+.title_bar:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.tpadr {
+  margin-right: 20px
+}
+.btngroup {
+    opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    display:inline-block;
+}
+
+/* Mouse-over effects */
+.btngroup:hover {
+	display:inline-block;
+    opacity: 1; /* Fully shown on mouse-over */
+}
+.btnleft {
+	margin-right: 80px
+}
+.btnright {
+	margin-left: 50px
+}
+.tagleft {
+	margin-right: 20px
+}
+.tagright {
+	margin-left: 20px
+}
+.box {
+    width: 100%;
+    overflow: hidden; 
+    text-align:center
+}
+
+.box1 {
+    text-align:center
+}
+
+
+.powerSet{
+    width: auto;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+	max-width: 100%;
+    min-width: 300px;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 70px; /* Specified height */
+    background: transparent; /* Grey background */
+	text-align: center;
+    overflow: hidden;
+    background: url("../../../assets/images/sliders/slide_bg.png");
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+	border-radius: 50%;
+    width: 64px; /* Set a specific slider handle width */
+    height: 64px; /* Slider handle height */
+    background: url("../../../assets/images/sliders/slide_knob.png");
+    cursor: pointer; /* Cursor on hover */
+}
+
+.filter_slider {
+	max-width: 100%;
+    min-width: 300px;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 70px; /* Specified height */
+    background: transparent; /* Grey background */
+	text-align: center;
+    overflow: hidden;
+    background: url("../../../assets/images/sliders/filter_slide_bg.png");
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.filter_slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.filter_slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+	border-radius: 50%;
+    width: 64px; /* Set a specific slider handle width */
+    height: 64px; /* Slider handle height */
+    background: url("../../../assets/images/sliders/slide_knob.png");
+    cursor: pointer; /* Cursor on hover */
+}
+
+.filter_slider::-moz-range-thumb {
+    width: 64px; /* Set a specific slider handle width */
+    height: 64px; /* Slider handle height */
+    background: #0d6786; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+	border-radius: 50%;
+} 
+
+.filter_slider::-moz-range-thumb {
+    width: 64px; /* Set a specific slider handle width */
+    height: 64px; /* Slider handle height */
+    background: #0d6786; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+	border-radius: 50%;
+} 
+
+.bgBtn {
+  text-align: center;
+  margin-left: 400px
+}
+
+.progress_mod {
+	text-align: center;
+    overflow: hidden;
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.progress_mod:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <!-- Site made with Mobirise Website Builder v4.6.3, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v4.6.3, mobirise.com">
@@ -16,245 +15,9 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  <script>
-   
-function lightPower()
-{
-	var img = document.getElementById("lightbtn");
-	if(img.src.match(/power_on/)) img.src = "assets/images/buttons/power_off.png";
-	else img.src = "assets/images/buttons/power_on.png";
-	return false;
-}
-function light_auto()
-{
-	var imgAuto = document.getElementById("light_auto");
-	var imgMan = document.getElementById("light_manual");
-	if (imgAuto.src.match(/auto_on/)) return;
-	if(imgAuto.src.match(/auto_off/) && imgMan.src.match(/manual_on/)) imgAuto.src = "assets/images/buttons/auto_on.png", imgMan.src = "assets/images/buttons/manual_off.png";
-	else imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
-	return false;
-}
-function light_manual()
-{
-	var imgAuto = document.getElementById("light_auto");
-	var imgMan = document.getElementById("light_manual");
-	if (imgMan.src.match(/manual_on/)) return;
-	if(imgMan.src.match(/manual_off/) && imgAuto.src.match(/auto_on/)) imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
-	else imgAuto.src = "assets/images/buttons/auto_on.png", imgMan.src = "assets/images/buttons/manual_off.png";
-	return false;
-}
-function lightMoonlight()
-{
-	var img = document.getElementById("light_moonlight");
-	if(img.src.match(/moonlight_on/)) img.src = "assets/images/buttons/moonlight_off.png";
-	else img.src = "assets/images/buttons/moonlight_on.png";
-	return false;
-}
-function lightDaycycle()
-{
-	var img = document.getElementById("light_daycycle");
-	if(img.src.match(/daycycle_on/)) img.src = "assets/images/buttons/daycycle_off.png";
-	else img.src = "assets/images/buttons/daycycle_on.png";
-	return false;
-}
-
-var btnTime;
-var btnTime1;
-function feederPower()
-{
-	var img = document.getElementById("feedbtn");
-	if(img.src.match(/power_on/)) img.src = "assets/images/buttons/power_off.png";
-	else img.src = "assets/images/buttons/power_on.png";
-	return false;
-}
-function feed_auto()
-{
-	var imgAuto = document.getElementById("feed_auto");
-	var imgMan = document.getElementById("feed_manual");
-	if (imgAuto.src.match(/auto_on/)) return;
-	if(imgAuto.src.match(/auto_off/) && imgMan.src.match(/manual_on/)) imgAuto.src = "assets/images/buttons/auto_on.png", imgMan.src = "assets/images/buttons/manual_off.png";
-	else imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
-	return false;
-}
-function feed_manual()
-{
-	var imgAuto = document.getElementById("feed_auto");
-	var imgMan = document.getElementById("feed_manual");
-	if (imgMan.src.match(/manual_on/)) return;
-	if(imgMan.src.match(/manual_off/) && imgAuto.src.match(/auto_on/)) imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
-	else imgAuto.src = "assets/images/buttons/auto_on.png", imgMan.src = "assets/images/buttons/manual_off.png";
-	return false;
-}
-function feed_snack(){
-	var img = document.getElementById("feed_snack");
-	if(img.src.match(/snack_on/)) return;
-	if (img.src.match(/snack_off/)) img.src = "assets/images/buttons/snack_on.png";
-	btnTime = setTimeout(snackRelease, 1000);
-	return false;
-	
-}
-function feed_quickfeed()
-{
-	var img = document.getElementById("feed_quickfeed");
-	if(img.src.match(/quickfeed_on/)) return;
-	if (img.src.match(/quickfeed_off/)) img.src = "assets/images/buttons/quickfeed_on.png";
-	btnTime1 = setTimeout(quickRelease, 1750);
-	return false;
-}
-function quickRelease(){
-	var quick = document.getElementById("feed_quickfeed");
-	quick.src = "assets/images/buttons/quickfeed_off.png";
-	clearTimeout(btnTime1);
-}
-function snackRelease(){
-	var snack = document.getElementById("feed_snack");
-	snack.src = "assets/images/buttons/snack_off.png";
-	clearTimeout(btnTime);
-}
-
-
-function tempPower()
-{
-	var img = document.getElementById("tempbtn");
-	if(img.src.match(/power_on/)) img.src = "assets/images/buttons/power_off.png";
-	else img.src = "assets/images/buttons/power_on.png";
-	return false;
-}
-function temp_auto()
-{
-	var imgAuto = document.getElementById("temp_auto");
-	var imgMan = document.getElementById("temp_manual");
-	if (imgAuto.src.match(/auto_on/)) return;
-	if(imgAuto.src.match(/auto_off/) && imgMan.src.match(/manual_on/)) imgAuto.src = "assets/images/buttons/auto_on.png", imgMan.src = "assets/images/buttons/manual_off.png";
-	else imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
-	return false;
-}
-function temp_manual()
-{
-	var imgAuto = document.getElementById("temp_auto");
-	var imgMan = document.getElementById("temp_manual");
-	if (imgMan.src.match(/manual_on/)) return;
-	if(imgMan.src.match(/manual_off/) && imgAuto.src.match(/auto_on/)) imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
-	else imgAuto.src = "assets/images/buttons/auto_on.png", imgMan.src = "assets/images/buttons/manual_off.png";
-	return false;
-}
-
-function filterPower()
-{
-	var img = document.getElementById("filterbtn");
-	if(img.src.match(/power_on/)) img.src = "assets/images/buttons/power_off.png";
-	else img.src = "assets/images/buttons/power_on.png";
-	return false;
-}
-function filter_auto()
-{
-	var imgAuto = document.getElementById("filter_auto");
-	var imgMan = document.getElementById("filter_manual");
-	if (imgAuto.src.match(/auto_on/)) return;
-	if(imgAuto.src.match(/auto_off/) && imgMan.src.match(/manual_on/)) imgAuto.src = "assets/images/buttons/auto_on.png", imgMan.src = "assets/images/buttons/manual_off.png";
-	else imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
-	return false;
-}
-function filter_manual()
-{
-	var imgAuto = document.getElementById("filter_auto");
-	var imgMan = document.getElementById("filter_manual");
-	if (imgMan.src.match(/manual_on/)) return;
-	if(imgMan.src.match(/manual_off/) && imgAuto.src.match(/auto_on/)) imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
-	else imgAuto.src = "assets/images/btn_rnd_on.png", imgMan.src = "assets/images/btn_rnd_off.png";
-	return false;
-}
-
-function auxPower()
-{
-	var img = document.getElementById("auxbtn");
-	if(img.src.match(/power_on/)) img.src = "assets/images/buttons/power_off.png";
-	else img.src = "assets/images/buttons/power_on.png";
-	return false;
-}
-function aux_auto()
-{
-	var imgAuto = document.getElementById("aux_auto");
-	var imgMan = document.getElementById("aux_manual");
-	if (imgAuto.src.match(/auto_on/)) return;
-	if(imgAuto.src.match(/auto_off/) && imgMan.src.match(/manual_on/)) imgAuto.src = "assets/images/buttons/auto_on.png", imgMan.src = "assets/images/buttons/manual_off.png";
-	else imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
-	return false;
-}
-function aux_manual()
-{
-	var imgAuto = document.getElementById("aux_auto");
-	var imgMan = document.getElementById("aux_manual");
-	if (imgMan.src.match(/manual_on/)) return;
-	if(imgMan.src.match(/manual_off/) && imgAuto.src.match(/auto_on/)) imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
-	else imgAuto.src = "assets/images/buttons/auto_on.png", imgMan.src = "assets/images/buttons/manual_off.png";
-	return false;
-}
-
-var myVar = setInterval(timedate, 1000);
-
-function timedate(){
-document.getElementById("clock").innerHTML = formatAMPM();
-}
-
-function formatAMPM() {
-var d = new Date(),
-    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-    ampm = d.getHours() >= 12 ? 'pm' : 'am',
-    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-	if (hours >= 13 && hours <=23){
-	hours -= 12;
-	}
-	if (hours == 0){
-	hours = 12;
-	}
-return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
-}
-
-var countBG = 0;
-
-function bgChange(){
-	countBG++;
-	if (countBG >=30) countBG = 0;
-	var sendBG = "bg"+countBG
-	for(i = 0; i < 30; i++) {
-	var rem = "bg"+i;
-			document.getElementsByClassName("tabs3")[0].classList.remove(rem);
-		}
-		document.getElementsByClassName("tabs3")[0].classList.add(sendBG);
-		document.getElementsByClassName("tabs3")[0].classList.add(mbr-parallax-background)
-		
-}
-var countClock = 0
-function clockColor(){
-		countClock++;
-	if (countClock >=19) countClock = 0;
-	var sendCLK = "clock"+countClock
-	for(i = 0; i < 19; i++) {
-	var rem = "clock"+i;
-			document.getElementsByClassName("clock")[0].classList.remove(rem);
-		}
-		document.getElementsByClassName("clock")[0].classList.add(sendCLK);
-}
-<!-- var msgTime = setTimeout(welcomeMsg, 2500); -->
-function welcomeMsg(){
-alert("Click title bar at top of page to change backgrounds...30 to choose from!");
-alert("Click clock text to change color...18 to choose from!");
-clearTimeout(msgTime);
-}
-
-<!-- var testwidth = setInterval(getWidth,2000); -->
-
-function getWidth(){
-var divWidth = document.getElementsByClassName("slidecontainer")[0].clientWidth;
-alert(divWidth);
-clearTimeout(testwidth);
-}
-    
-</script>
+  <link rel="stylesheet" href="assets/bu5ted/css/bu5ted.css">
+  <link rel="stylesheet" href="assets/bu5ted/css/bg_clock.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   
 </head>
 <body>
@@ -262,20 +25,12 @@ clearTimeout(testwidth);
 	<img id= "title_bar" src="assets/images/bg/title_bar.png" alt="title_bar" onClick="bgChange()" class="title_bar">
 	</div>
   <section class="bg0 tabs3"  id="tabs3-p">
-
-    
-
-    
-
+  
     <div class="container">
-	
-        <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
-           RPi3 Tank Controller</h2>
-		   
+        <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">RPi3 Tank Controller</h2>
         <h3 class="mbr-section-subtitle  display-58 align-center mbr-light mbr-fonts-style"> 
-            <a href="#"><div class="clock clock0" onClick="clockColor()" id="clock" ></div></a></h3>
-			
-    </div>
+        <a href="#"><div class="clock clock0" onClick="clockColor()" id="clock" ></div></a></h3>
+	</div>
 	
     <div class="container-fluid">
         <div class="row tabcont">
@@ -285,7 +40,6 @@ clearTimeout(testwidth);
                 <li class="nav-item mbr-fonts-style"><a class="nav-link show active display-7" role="tab" data-toggle="tab" href="#tabs3-p_tab2" aria-selected="true"><span class="mbri-growing-chart mbr-iconfont mbr-iconfont-btn"></span>Temperature</a></li>
                 <li class="nav-item mbr-fonts-style"><a class="nav-link show active display-7" role="tab" data-toggle="tab" href="#tabs3-p_tab3" aria-selected="true"><span class="mbri-link mbr-iconfont mbr-iconfont-btn"></span>Filter</a></li>
                 <li class="nav-item mbr-fonts-style"><a class="nav-link active show display-7" role="tab" data-toggle="tab" href="#tabs3-p_tab4" aria-selected="true"><span class="mbri-unlink mbr-iconfont mbr-iconfont-btn"></span>Auxillary</a></li>
-                
             </ul>
         </div>
     </div>
@@ -321,9 +75,7 @@ clearTimeout(testwidth);
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Effect</h3>
 								<img id= "light_moonlight" src="assets/images/buttons/moonlight_off.png" alt="BTN OFF" onClick="lightMoonlight()" class="btnleft btngroup" height="100" width="100">
 								<img id= "light_daycycle" src="assets/images/buttons/daycycle_off.png" alt="BTN OFF" onClick="lightDaycycle()" class="btnright btngroup" height="100" width="100">
-								</div><br>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your lights from here.</p>
-							<a class="mbr-section-text  align-center mbr-fonts-style display-7" href="light.html">Light Settings</a>
+								</div><br><br><br><br><br>
                         </div>
                     </div>
                 </div>
@@ -346,14 +98,18 @@ clearTimeout(testwidth);
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Mode</h3>
 								<img id= "feed_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="feed_auto()" class="btnleft btngroup" height="100" width="100">
 								<img id= "feed_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="feed_manual()" class="btnright btngroup" height="100" width="100">
-								</div><br>
+								</div><br><br>
 								<div class="wrapper">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Snack/Feed</h3>
 								<img id= "feed_snack" src="assets/images/buttons/snack_off.png" alt="BTN OFF" onClick="feed_snack()" class="btnleft btngroup" height="100" width="100">
 								<img id= "feed_quickfeed" src="assets/images/buttons/quickfeed_off.png" alt="BTN OFF" onClick="feed_quickfeed()" class="btnright btngroup" height="100" width="100">
-								</div><br>
-								
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your feeder from here.</p>
+								</div><br><br>
+								<div class="wrapper">
+								<h3 id="last_feeding" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Last Feeding</h3>
+								<p id="last_feeding_label" class="mbr-section-text  align-center mbr-fonts-style display-7">..</p><br>
+								<h3 id="next_feeding" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Next Feeding</h3>
+								<p id="next_feeding_label" class="mbr-section-text  align-center mbr-fonts-style display-7">...</p>
+								</div><br><br><br><br><br>
                         </div>
                     </div>
                 </div>
@@ -370,15 +126,20 @@ clearTimeout(testwidth);
 								<img id= "tempbtn" src="assets/images/buttons/power_off.png" alt="LED OFF" onClick="tempPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
 								</div><div class="slidecontainer">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">Set Temperature</h3>
-								<input type="range" min="1" max="100" class="slider" value="50" id="myRange">
-								
-								</div><br><br><br>
+								<input type="range" min="60" max="90" class="slider" value="74" id="set_temp oninput="getTempValue(this.value)" onchange="getTempValue(this.value)">
+								<p id="set_temp_label" class="mbr-section-text  align-center mbr-fonts-style display-7">74</p>
+								</div><br><br>
 								<div class="wrapper">
 								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
 								<img id= "temp_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="temp_auto()" class="btnleft btngroup" height="100" width="100">
 								<img id= "temp_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="temp_manual()" class="btnright btngroup" height="100" width="100">
-								</div><br>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your temperature from here.</p>
+								</div><br><br>
+                            <div class="wrapper">
+								<h3 id="temp1" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Temp 1</h3>
+								<p id="temp1_label" class="mbr-section-text  align-center mbr-fonts-style display-7">73.8  F</p><br>
+								<h3 id="temp2" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Temp 2</h3>
+								<p id="temp2_label" class="mbr-section-text  align-center mbr-fonts-style display-7">74.1  F</p>
+							</div><br><br><br><br><br>
                         </div>
                     </div>
                 </div>
@@ -393,16 +154,20 @@ clearTimeout(testwidth);
                                 Filter Control</h4>
 								<div class="box">
 								<img id= "filterbtn" src="assets/images/buttons/power_off.png" alt="LED OFF" onClick="filterPower()" class="powerSet btncontainer" height="100" width="100"><br><br><br>
-								</div><div class="slidecontainer">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5"> Brightness</h3>
+								</div>
+								<div class="slidecontainer">
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">Filter Flow</h3>
 								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 								</div><br><br><br>
 								<div class="wrapper">
-								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr"> Mode</h3>
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5 tpadr">Mode</h3>
 								<img id= "filter_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="filter_auto()" class="btnleft btngroup" height="100" width="100">
 								<img id= "filter_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="filter_manual()" class="btnright btngroup" height="100" width="100">
 								</div><br>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">Control your lights from here.</p>
+								<div class="slidecontainer">
+								<h3 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">Filter Life</h3>
+								<input type="range" min="1" max="100" value="30" class="filter_slider" id="filterSlide">
+								</div><br><br><br><br>
                         </div>
                     </div>
                 </div>
@@ -429,24 +194,24 @@ clearTimeout(testwidth);
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">For future expansion and development.</p>
                         </div>
                     </div>
-                </div>
-
-                
+                </div>  
             </div>
         </div>
     </div>
 	
 </section>
-
-
-  <section class="engine"><a href="https://mobirise.ws/j">design your own website</a></section><script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/mbr-tabs/mbr-tabs.js"></script>
-  <script src="assets/parallax/jarallax.min.js"></script>
-  <script src="assets/theme/js/script.js"></script>
+	<section class="engine">
+</section>
+	
+	<script src="assets/web/assets/jquery/jquery.min.js"></script>
+	<script src="assets/popper/popper.min.js"></script>
+	<script src="assets/tether/tether.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/smoothscroll/smooth-scroll.js"></script>
+	<script src="assets/mbr-tabs/mbr-tabs.js"></script>
+	<script src="assets/parallax/jarallax.min.js"></script>
+	<script src="assets/theme/js/script.js"></script>
+	<script src="assets/bu5ted/js/bu5ted.js"></script>
   
   
 </body>
