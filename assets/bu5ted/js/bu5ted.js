@@ -4,7 +4,7 @@
  * index.html function list
 */
 
-//var setupTimer = setInterval(setupAll, 500);
+var setupTimer = setInterval(setupAll, 500);
 
 function setupAll(){
 	clearTimeout(setupTimer);
@@ -66,19 +66,6 @@ function setTextColor(){
 function settingPage(){
 	window.location.href="main_settings.html";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function lightPower()
 {
@@ -336,19 +323,7 @@ function bgLoad(){
 		document.getElementsByClassName("tabs3")[0].classList.add("mbr-parallax-background");
 		
 }
-var countBG = 0;
-function bgChange(){
-	countBG++;
-	if (countBG >=30) countBG = 0;
-	var sendBG = "bg"+countBG
-	for(i = 0; i < 30; i++) {
-	var rem = "bg"+i;
-			document.getElementsByClassName("tabs3")[0].classList.remove(rem);
-		}
-		document.getElementsByClassName("tabs3")[0].classList.add(sendBG);
-		document.getElementsByClassName("tabs3")[0].classList.add(mbr-parallax-background)
-		
-}
+
 
 var countClock = 0
 function clockColor(){
