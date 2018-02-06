@@ -4,7 +4,7 @@
  * index.html function list
 */
 
-var setupTimer = setInterval(setupAll, 500);
+//var setupTimer = setInterval(setupAll, 500);
 
 function setupAll(){
 	clearTimeout(setupTimer);
