@@ -22,7 +22,7 @@
 </head>
 <body>
 <div class="title_bar">
-	<img id= "title_bar" src="assets/images/bg/title_bar.png" alt="title_bar" onClick="settingPage()" class="title_bar">
+	<img id= "title_bar" src="assets/images/bg/title_bar.png" alt="title_bar" onClick="bgChange()" class="title_bar">
 	</div>
   <section class="bg0 tabs3"  id="tabs3-p">
   
@@ -68,8 +68,8 @@
 								</div><br><br><br>
 								<div class="wrapper">
 								<h3 id="lmodeheader" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr"> Mode</h3>
-								<img id= "light_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="light_auto()" class="btnleft btngroup" height="100" width="100">
-								<img id= "light_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="light_manual()" class="btnright btngroup" height="100" width="100">
+								<img id= "light_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="lightAuto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "light_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="lightManual()" class="btnright btngroup" height="100" width="100">
 								</div><br>
 								<div class="wrapper">
 								<h3 id="effectheader" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr"> Effect</h3>
@@ -96,13 +96,13 @@
 								</div><br><br><br>
 								<div class="wrapper">
 								<h3 id="fmodeheader" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Mode</h3>
-								<img id= "feed_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="feed_auto()" class="btnleft btngroup" height="100" width="100">
-								<img id= "feed_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="feed_manual()" class="btnright btngroup" height="100" width="100">
+								<img id= "feed_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="feedAuto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "feed_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="feedManual()" class="btnright btngroup" height="100" width="100">
 								</div><br><br>
 								<div class="wrapper">
 								<h3 id="snackheader" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Snack/Feed</h3>
-								<img id= "feed_snack" src="assets/images/buttons/snack_off.png" alt="BTN OFF" onClick="feed_snack()" class="btnleft btngroup" height="100" width="100">
-								<img id= "feed_quickfeed" src="assets/images/buttons/quickfeed_off.png" alt="BTN OFF" onClick="feed_quickfeed()" class="btnright btngroup" height="100" width="100">
+								<img id= "feed_snack" src="assets/images/buttons/snack_off.png" alt="BTN OFF" onClick="feedSnack()" class="btnleft btngroup" height="100" width="100">
+								<img id= "feed_quickfeed" src="assets/images/buttons/quickfeed_off.png" alt="BTN OFF" onClick="feedQuickfeed()" class="btnright btngroup" height="100" width="100">
 								</div><br><br>
 								<div class="wrapper">
 								<h3 id="last_feeding" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Last Feeding</h3>
@@ -131,8 +131,8 @@
 								</div><br><br>
 								<div class="wrapper">
 								<h3 id="tmodeheader" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr"> Mode</h3>
-								<img id= "temp_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="temp_auto()" class="btnleft btngroup" height="100" width="100">
-								<img id= "temp_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="temp_manual()" class="btnright btngroup" height="100" width="100">
+								<img id= "temp_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="tempAuto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "temp_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="tempManual()" class="btnright btngroup" height="100" width="100">
 								</div><br><br>
                             <div class="wrapper">
 								<h3 id="temp1" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Temp 1</h3>
@@ -165,8 +165,8 @@
 								</div><br><br>
 								<div class="wrapper">
 								<h3 id="optionheader" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr">Options</h3>
-								<img id= "filter_reset" src="assets/images/buttons/reset_off.png" alt="BTN OFF" onClick="filter_reset()" class="btnleft btngroup" height="100" width="100">
-								<img id= "filter_calibrate" src="assets/images/buttons/calibrate_off.png" alt="BTN OFF" onClick="filter_calibrate()" class="btnright btngroup" height="100" width="100">
+								<img id= "filter_reset" src="assets/images/buttons/reset_off.png" alt="BTN OFF" onClick="filterReset()" class="btnleft btngroup" height="100" width="100">
+								<img id= "filter_calibrate" src="assets/images/buttons/calibrate_off.png" alt="BTN OFF" onClick="filterCalibrate()" class="btnright btngroup" height="100" width="100">
 								</div><br><br>
 								
                         </div>
@@ -189,8 +189,8 @@
 								</div><br><br><br>
 								<div class="wrapper">
 								<h3 id="amodeheader" class="mbr-element-title  align-center mbr-fonts-style pb-2 display-58 tpadr"> Mode</h3>
-								<img id= "aux_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="aux_auto()" class="btnleft btngroup" height="100" width="100">
-								<img id= "aux_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="aux_manual()" class="btnright btngroup" height="100" width="100">
+								<img id= "aux_auto" src="assets/images/buttons/auto_off.png" alt="BTN OFF" onClick="auxAuto()" class="btnleft btngroup" height="100" width="100">
+								<img id= "aux_manual" src="assets/images/buttons/manual_on.png" alt="BTN OFF" onClick="auxManual()" class="btnright btngroup" height="100" width="100">
 								</div><br>
                             <p class="mbr-section-text  align-center mbr-fonts-style display-7">For future expansion and development.</p>
                         </div>

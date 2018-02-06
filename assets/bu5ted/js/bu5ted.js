@@ -87,7 +87,7 @@ function lightPower()
 	else img.src = "assets/images/buttons/power_on.png";
 	return false;
 }
-function light_auto()
+function lightAuto()
 {
 	var imgAuto = document.getElementById("light_auto");
 	var imgMan = document.getElementById("light_manual");
@@ -96,7 +96,7 @@ function light_auto()
 	else imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
 	return false;
 }
-function light_manual()
+function lightManual()
 {
 	var imgAuto = document.getElementById("light_auto");
 	var imgMan = document.getElementById("light_manual");
@@ -129,7 +129,7 @@ function feederPower()
 	else img.src = "assets/images/buttons/power_on.png";
 	return false;
 }
-function feed_auto()
+function feedAuto()
 {
 	var imgAuto = document.getElementById("feed_auto");
 	var imgMan = document.getElementById("feed_manual");
@@ -138,7 +138,7 @@ function feed_auto()
 	else imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
 	return false;
 }
-function feed_manual()
+function feedManual()
 {
 	var imgAuto = document.getElementById("feed_auto");
 	var imgMan = document.getElementById("feed_manual");
@@ -147,7 +147,7 @@ function feed_manual()
 	else imgAuto.src = "assets/images/buttons/auto_on.png", imgMan.src = "assets/images/buttons/manual_off.png";
 	return false;
 }
-function feed_snack(){
+function feedSnack(){
 	var img = document.getElementById("feed_snack");
 	if(img.src.match(/snack_on/)) return;
 	if (img.src.match(/snack_off/)) img.src = "assets/images/buttons/snack_on.png";
@@ -155,7 +155,7 @@ function feed_snack(){
 	return false;
 	
 }
-function feed_quickfeed()
+function feedQuickfeed()
 {
 	document.getElementById("last_feeding_label").innerHTML = formatAMPM();
 	document.getElementById("next_feeding_label").innerHTML = nextFeedTime();
@@ -184,7 +184,7 @@ function tempPower()
 	else img.src = "assets/images/buttons/power_on.png";
 	return false;
 }
-function temp_auto()
+function tempAuto()
 {
 	var imgAuto = document.getElementById("temp_auto");
 	var imgMan = document.getElementById("temp_manual");
@@ -193,7 +193,7 @@ function temp_auto()
 	else imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
 	return false;
 }
-function temp_manual()
+function tempManual()
 {
 	var imgAuto = document.getElementById("temp_auto");
 	var imgMan = document.getElementById("temp_manual");
@@ -210,7 +210,7 @@ function filterPower()
 	else img.src = "assets/images/buttons/power_on.png";
 	return false;
 }
-function filter_reset()
+function filterReset()
 {
 	var img = document.getElementById("filter_reset");
 	var fs = document.getElementById("filter_slider");
@@ -222,7 +222,7 @@ function filter_reset()
 	}
 	return false;
 }
-function filter_calibrate()
+function filterCalibrate()
 {
 	var img = document.getElementById("filter_calibrate");
 	if(img.src.match(/calibrate_on/)) return;
@@ -248,7 +248,7 @@ function auxPower()
 	else img.src = "assets/images/buttons/power_on.png";
 	return false;
 }
-function aux_auto()
+function auxAuto()
 {
 	var imgAuto = document.getElementById("aux_auto");
 	var imgMan = document.getElementById("aux_manual");
@@ -257,7 +257,7 @@ function aux_auto()
 	else imgAuto.src = "assets/images/buttons/auto_off.png", imgMan.src = "assets/images/buttons/manual_on.png";
 	return false;
 }
-function aux_manual()
+function auxManual()
 {
 	var imgAuto = document.getElementById("aux_auto");
 	var imgMan = document.getElementById("aux_manual");
@@ -334,6 +334,19 @@ function bgLoad(){
 		}
 		document.getElementsByClassName("tabs3")[0].classList.add(sendBG);
 		document.getElementsByClassName("tabs3")[0].classList.add("mbr-parallax-background");
+		
+}
+
+function bgChange(){
+	countBG++;
+	if (countBG >=30) countBG = 0;
+	var sendBG = "bg"+countBG
+	for(i = 0; i < 30; i++) {
+	var rem = "bg"+i;
+			document.getElementsByClassName("tabs3")[0].classList.remove(rem);
+		}
+		document.getElementsByClassName("tabs3")[0].classList.add(sendBG);
+		document.getElementsByClassName("tabs3")[0].classList.add(mbr-parallax-background)
 		
 }
 
