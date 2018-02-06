@@ -336,7 +336,7 @@ function bgLoad(){
 		document.getElementsByClassName("tabs3")[0].classList.add("mbr-parallax-background");
 		
 }
-
+var countBG = 0;
 function bgChange(){
 	countBG++;
 	if (countBG >=30) countBG = 0;
