@@ -213,7 +213,16 @@
 	<script src="assets/parallax/jarallax.min.js"></script>
 	<script src="assets/theme/js/script.js"></script>
 	<script src="assets/bu5ted/js/bu5ted.js"></script>
-  
-  
+	<script src="assets/bu5ted/js/site-logic.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+    <script>
+    var socket = io.connect('http://localhost:8080');
+	
+	socket.on('auxSignal', function(data){
+		setPowerButtons(data.data);
+
+	});
+			
+    </script>
 </body>
 </html>

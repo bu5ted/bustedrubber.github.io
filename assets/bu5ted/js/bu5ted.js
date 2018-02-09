@@ -228,13 +228,42 @@ function filterRelease(){
 	clearTimeout(btnTime);
 }
 
+
+
+
+
+
+
+
+
 function auxPower()
 {
 	var img = document.getElementById("auxbtn");
-	if(img.src.match(/power_on/)) img.src = "assets/images/buttons/power_off.png";
-	else img.src = "assets/images/buttons/power_on.png";
+	if(img.src.match(/power_on/)){
+		auxOn();
+	}
+	else if (img.src.match(/power_off/)){
+		auxOff();
+	}
+}
+
+function auxOn(){
+	var img = document.getElementById("auxbtn");
+	img.src = "assets/images/buttons/power_off.png";
+	socket.emit('powerSet', { data: 'OFF' });
+	console.log("CLICK2");
 	return false;
 }
+
+function auxOff(){
+	var img = document.getElementById("auxbtn");
+	img.src = "assets/images/buttons/power_on.png";
+	socket.emit('powerSet', { data: 'ON' });
+	console.log("CLICK1");
+	return false;
+}
+
+
 function auxAuto()
 {
 	var imgAuto = document.getElementById("aux_auto");

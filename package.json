@@ -1,0 +1,15 @@
+{
+  "name": "rpi3-tank-control",
+  "version": "1.0.0",
+  "description": "Raspberry Pi 3b Fish Tank Control",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Bu5ted Rubber",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  }
+}
